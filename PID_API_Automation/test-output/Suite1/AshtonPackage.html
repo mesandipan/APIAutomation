@@ -1,0 +1,157 @@
+<html>
+<head>
+<title>TestNG:  AshtonPackage</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>AshtonPackage</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>9/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Thu Feb 20 16:47:58 IST 2020</td>
+</tr>
+<tr><td>Total time:</td><td>11 seconds (11265 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.pid.qa.usermgmt.CRUD_UserResource.test_user()'><b>test_user</b><br>Test class: com.pid.qa.usermgmt.CRUD_UserResource<br>Parameters: {Header=Content-Type:application/json, APIEndpoint=/user_management/create_user, RequestVerb=post, ScenarioName=Create Cognito User, TCID=TC001, ExpectedCode=201, RequestBody={
+"email":"QATest27@danaherdigital.com",
+"company":"Videojet",
+"location":"Bangalore",
+"firstName":"QA",
+"lastName":"Test27",
+"country":"India",
+"groupId":"abc45hcb"
+}}</td>
+<td></td>
+<td>1</td>
+<td>com.pid.qa.usermgmt.CRUD_UserResource@1e7c7811</td></tr>
+<tr>
+<td title='com.pid.qa.usermgmt.CRUD_UserResource.test_user()'><b>test_user</b><br>Test class: com.pid.qa.usermgmt.CRUD_UserResource<br>Parameters: {Header=Content-Type:application/json, APIEndpoint=/user_management/get_user/, RequestVerb=getid, ScenarioName=Get Details By ID, TCID=TC002, ExpectedCode=200}</td>
+<td></td>
+<td>0</td>
+<td>com.pid.qa.usermgmt.CRUD_UserResource@1e7c7811</td></tr>
+<tr>
+<td title='com.pid.qa.usermgmt.CRUD_UserResource.test_user()'><b>test_user</b><br>Test class: com.pid.qa.usermgmt.CRUD_UserResource<br>Parameters: {Header=Content-Type:application/json, APIEndpoint=/user_management/get_users, RequestVerb=get, ScenarioName=Get All User Details, TCID=TC003, ExpectedCode=200}</td>
+<td></td>
+<td>0</td>
+<td>com.pid.qa.usermgmt.CRUD_UserResource@1e7c7811</td></tr>
+<tr>
+<td title='com.pid.qa.usermgmt.CRUD_UserResource.test_user()'><b>test_user</b><br>Test class: com.pid.qa.usermgmt.CRUD_UserResource<br>Parameters: {Header=Content-Type:application/json, APIEndpoint=/user_management/update_user/, RequestVerb=put, ScenarioName=Update User Details, TCID=TC004, ExpectedCode=204, RequestBody={
+"email":"QATest27@danaherdigital.com",
+"company":"Videojet",
+"location":"Bangalore",
+"firstName":"QA-Automation",
+"lastName":"Test27",
+"country":"India",
+"groupId":"abc45hcb"
+}}</td>
+<td></td>
+<td>0</td>
+<td>com.pid.qa.usermgmt.CRUD_UserResource@1e7c7811</td></tr>
+<tr>
+<td title='com.pid.qa.usermgmt.CRUD_UserResource.test_user()'><b>test_user</b><br>Test class: com.pid.qa.usermgmt.CRUD_UserResource<br>Parameters: {Header=Content-Type:application/json, APIEndpoint=/user_management/get_user/, RequestVerb=getid, ScenarioName=Get Details By ID, TCID=TC005, ExpectedCode=200}</td>
+<td></td>
+<td>0</td>
+<td>com.pid.qa.usermgmt.CRUD_UserResource@1e7c7811</td></tr>
+<tr>
+<td title='com.pid.qa.usermgmt.CRUD_UserResource.test_user()'><b>test_user</b><br>Test class: com.pid.qa.usermgmt.CRUD_UserResource<br>Parameters: {Header=Content-Type:application/json, APIEndpoint=/user_management/delete_user/, RequestVerb=delete, ScenarioName=Deleting user, TCID=TC006, ExpectedCode=204}</td>
+<td></td>
+<td>0</td>
+<td>com.pid.qa.usermgmt.CRUD_UserResource@1e7c7811</td></tr>
+<tr>
+<td title='com.pid.qa.usermgmt.CRUD_UserResource.test_user()'><b>test_user</b><br>Test class: com.pid.qa.usermgmt.CRUD_UserResource<br>Parameters: {Header=Content-Type:application/json, APIEndpoint=/user_management/create_user, RequestVerb=post, ScenarioName=Creating user without Email Id, TCID=TC007, ExpectedCode=400, RequestBody={
+"email":"",
+"company":"DanaherDigital",
+"location":"Bangalore",
+"firstName":"Phavana",
+"lastName":"E",
+"country":"India",
+"groupId":"78b828f4-daed-84de-ba77-4ee0d08fc20d"
+}, ResponseBody=UM201}</td>
+<td></td>
+<td>0</td>
+<td>com.pid.qa.usermgmt.CRUD_UserResource@1e7c7811</td></tr>
+<tr>
+<td title='com.pid.qa.usermgmt.CRUD_UserResource.test_user()'><b>test_user</b><br>Test class: com.pid.qa.usermgmt.CRUD_UserResource<br>Parameters: {Header=Content-Type:application/json, APIEndpoint=/user_management/create_user, RequestVerb=post, ScenarioName=Creating user without FirstName, TCID=TC008, ExpectedCode=400, RequestBody={
+"email":"QATest27@danaherdigital.com",
+"company":"Videojet",
+"location":"Bangalore",
+"firstName":"",
+"lastName":"Test27",
+"country":"India",
+"groupId":"abc45hcb"
+}, ResponseBody=UM103}</td>
+<td></td>
+<td>0</td>
+<td>com.pid.qa.usermgmt.CRUD_UserResource@1e7c7811</td></tr>
+<tr>
+<td title='com.pid.qa.usermgmt.CRUD_UserResource.test_user()'><b>test_user</b><br>Test class: com.pid.qa.usermgmt.CRUD_UserResource<br>Parameters: {Header=Content-Type:application/json, APIEndpoint=/user_management/create_user, RequestVerb=post, ScenarioName=Creating user without JSON params, TCID=TC009, ExpectedCode=400, RequestBody={
+}, ResponseBody=UM201,UM202,UM103}</td>
+<td></td>
+<td>1</td>
+<td>com.pid.qa.usermgmt.CRUD_UserResource@1e7c7811</td></tr>
+</table><p>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite_userManagement]">
+  <parameter name="log-level" value="DEBUG"/>
+  <parameter name="xl-parameter" value="/src/test/resources/com/pid/qa/usermgmt/"/>
+  <parameter name="excel-version" value="_v1.xlsx"/>
+  <parameter name="url-parameter" value="http://demo4032024.mockable.io"/>
+  <listeners>
+    <listener class-name="com.pid.qa.Listener.TestAllureListener"/>
+  </listeners>
+  <test thread-count="5" name="UserManagement(failed)">
+    <classes>
+      <class name="com.pid.qa.usermgmt.EmployeeTest">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="logInit"/>
+          <include name="userResourceTest"/>
+          <include name="init"/>
+        </methods>
+      </class> <!-- com.pid.qa.usermgmt.EmployeeTest -->
+    </classes>
+  </test> <!-- UserManagement(failed) -->
+</suite> <!-- Failed suite [Suite_userManagement] -->

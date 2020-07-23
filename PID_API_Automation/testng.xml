@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="AutomationSuite">
+	<parameter name="excel-version" value="_v1.xlsx" />
+	<parameter name="log-level" value="DEBUG" />
+	<parameter name="url-parameter"
+		value="http://demo4032024.mockable.io" />
+	<parameter name="xl-parameter"
+		value="/src/test/resources/com/ig/qa/test/" />
+
+	<test name="EmployeeDataTest">
+		<classes>
+			<class name="com.ig.qa.employeetest.EmployeeTest"></class>
+		</classes>
+	</test>
+</suite>

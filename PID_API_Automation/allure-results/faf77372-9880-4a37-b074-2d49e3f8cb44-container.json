@@ -1,0 +1,1 @@
+{"uuid":"faf77372-9880-4a37-b074-2d49e3f8cb44","name":"UserManagement","children":["60f2a6cb-9c07-4936-89b1-aac90cc658bd"],"befores":[{"name":"beforeTest","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1593499981143,"stop":1593499981545}],"afters":[],"links":[],"start":1593499981127,"stop":1593499985355}
